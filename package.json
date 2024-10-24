@@ -1,5 +1,27 @@
 {
-  "dependencies": {
-    "prettier": "^3.3.3"
-  }
+    "name": "projetos-js-alura",
+    "version": "1.0.0",
+    "description": "Projetos realizados no curso de Lógica de Programação da Alura",
+    "main": "index.js",
+    "devDependencies": {
+        "prettier": "^3.3.3",
+        "husky": "^9.1.6",
+        "lint-staged": "^15.2.10"
+    },
+    "scripts": {
+        "prepare": "husky"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alfasou/projetos-js-alura.git"
+    },
+    "author": "Andressa de Faria Souza",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/alfasou/projetos-js-alura/issues"
+    },
+    "homepage": "https://github.com/alfasou/projetos-js-alura#readme",
+    "lint-staged": {
+        "**/*": "prettier --write --ignore-unknown"
+    }
 }
