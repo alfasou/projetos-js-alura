@@ -2,12 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@600;700&display=swap');
 
 .body {
-    color: #FFFFFF;
+    color: #ffffff;
 
     min-height: 100vh;
 
     background: rgb(0, 0, 0);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(1, 8, 14, 1) 25%, rgba(80, 94, 255, 0.85) 50%, rgba(1, 8, 14, 1) 75%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(1, 8, 14, 1) 25%,
+        rgba(80, 94, 255, 0.85) 50%,
+        rgba(1, 8, 14, 1) 75%,
+        rgba(0, 0, 0, 1) 100%
+    );
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -20,7 +27,7 @@
 
 @media screen and (min-width: 1440px) {
     .body {
-        padding: 2rem calc((100vw - 1086px)/2);
+        padding: 2rem calc((100vw - 1086px) / 2);
     }
 }
 
@@ -41,7 +48,7 @@
 .divisor__line {
     height: 1px;
     width: 282px;
-    background-color: #00F4BF;
+    background-color: #00f4bf;
 }
 
 .page-title {
@@ -53,7 +60,7 @@
 }
 
 .page-title__emphasis {
-    color: #505EFF;
+    color: #505eff;
 }
 
 .dashboard {
@@ -62,7 +69,7 @@
     border-radius: 2rem;
     border-width: 1px;
     border-style: solid;
-    border-color: #00F4BF;
+    border-color: #00f4bf;
 
     padding: 3rem;
     width: 100%;
@@ -93,14 +100,14 @@
 }
 
 .dashboard__item__img--rented::after {
-    content: "";
+    content: '';
     display: block;
     width: 100%;
     height: 100%;
 
     position: absolute;
     top: 0;
-    
+
     background-color: rgba(1, 8, 14, 0.4);
 }
 
@@ -123,11 +130,11 @@
 
     border-radius: 1rem;
 
-    background-color: #1875E8;
+    background-color: #1875e8;
 }
 
 .dashboard__item__button--return {
-    background-color: #01080E;
+    background-color: #01080e;
 }
 
 .hachuras {
