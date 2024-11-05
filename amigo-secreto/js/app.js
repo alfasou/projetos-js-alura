@@ -3,26 +3,27 @@ let amigos = [];
 function adicionar() {
     let amigo = document.getElementById('nome-amigo');
     let lista = document.getElementById('lista-amigos');
+    let valAmigo = CapitalizeWord(amigo.value)
 
     if (amigo.value == '') {
         alert('Informe o nome do amigo!');
         return;
     }
 
-    if (amigos.includes(amigo.value)) {
+    if (amigos.includes(valAmigo)) {
         alert('Nome já adicionado!');
         return;
     }
     
-    amigos.push(amigo.value);
+    amigos.push(valAmigo);
 
     if (lista.textContent == '') {
-        lista.textContent = amigo.value;
+        lista.textContent = valAmigo;
     } else {
-        lista.textContent = lista.textContent + ', ' + amigo.value;
+        lista.textContent = lista.textContent + ', ' + valAmigo;
     }
 
-    amigo.value = '';
+    valAmigo = '';
 }
 
 function embaralha(lista) {
@@ -61,4 +62,9 @@ function reiniciar() {
     amigos = [];
     document.getElementById('lista-amigos').innerHTML = '';
     document.getElementById('lista-sorteio').innerHTML = '';
+}
+
+function CapitalizeWord(name)
+{
+    return name.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
