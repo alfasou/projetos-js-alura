@@ -110,6 +110,7 @@ body {
 }
 
 .form__input {
+  /* text-transform: capitalize; */
   align-items: center;
   background-color: transparent;
   border: 1px solid #1875e8;
